@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complain form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    <link rel="stylesheet" type="text/css" href="../static/app.css">
+</head>
+<body>
+   <form action="/submitted" method="post" class="for" >
+    <h3>ENTER YOUR NAME</h3>
+    <br><br>
+    <input type="text" name="name">
+    <br><br>
+    <h3>ENTER YOUR E-mail</h3>
+    <br><br> 
+    <input brtype="email" name="email">
+    <br><br>
+    <h3>ENTER YOUR MESSAGE</h3>
+    <br><br>
+    
+<textarea name="messag" id="message" onclick="clearText()" cols="10" rows="10">how may we help you?</textarea>
+  <input type="submit" value="submit">
+</form>
+<script src="../static/app.js"></script>
+</body>
+</html>
